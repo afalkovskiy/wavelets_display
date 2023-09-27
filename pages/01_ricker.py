@@ -21,8 +21,8 @@ t, y = ricker (f)
 
 chart_data = pd.DataFrame(
    {
-       "time (sec) ": t,
-       "amplitude": y
+       "t": t,
+       "y": y
    }
 )
 
