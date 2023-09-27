@@ -5,6 +5,21 @@ import numpy as np
 #from scipy.signal import hilbert, chirp
 import math
 
+pi = math.pi
+
+def ORMSBY(f1=5., f2=10., f3=40., f4=45., length=0.512, dt=0.001):
+    p = np.pi
+    t = np.linspace(-length/2, (length-dt)/2, int(length/dt))
+
+    # y = p*p*f4**2 * (np.sinc(f4*t))**2/(p*f4-p*f3) - p*p*f3**2 * (np.sinc(f3*t))**2/(p*f4-p*f3) - \
+    #     p*p*f2**2 * (np.sinc(f2*t))**2/(p*f2-p*f1) - p*p*f1**2 * (np.sinc(f1*t))**2/(p*f2-p*f1)
+    y = p*f4**2 * (np.sinc(f4*t))**2/(f4-f3) - p*f3**2 * (np.sinc(f3*t))**2/(f4-f3) - \
+        p*f2**2 * (np.sinc(f2*t))**2/(f2-f1) - p*f1**2 * (np.sinc(f1*t))**2/(f2-f1)
+
+    y = y / np.amax(abs(y))
+
+    return t, y
+
 st.title('ORMSBY wavelet')
 st.text('This is a web app do display wavelets')
 
