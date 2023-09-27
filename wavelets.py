@@ -1,3 +1,4 @@
 import streamlit as st
 
-st.write('AF test')
+st.title('Seismic wavelets')
+st.text('This is a web app do display different wavelets')
