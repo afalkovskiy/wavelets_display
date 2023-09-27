@@ -21,8 +21,8 @@ t, y = ricker (f)
 
 chart_data = pd.DataFrame(
    {
-       "t": t,
-       "y": y
+       "y": t,
+       "t": y
    }
 )
 
