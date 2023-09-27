@@ -21,11 +21,11 @@ t, y = ricker (f)
 
 chart_data = pd.DataFrame(
    {
-       "y": t,
-       "t": y
+       "t": t,
+       "y": y
    }
 )
 
-st.line_chart(chart_data, y="y", x="t")
+st.line_chart(chart_data, x="t", y="y")
 
 
