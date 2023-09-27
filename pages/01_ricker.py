@@ -19,5 +19,13 @@ f = st.slider('Select frequency from [1, 240] Hz', value=60., min_value=1., max_
 st.write("Frequency = ", f)
 t, y = ricker (f)
 
+chart_data = pd.DataFrame(
+   {
+       "t": t,
+       "y": y
+   }
+)
+
+st.line_chart(chart_data, x="t", y="y")
 
 
