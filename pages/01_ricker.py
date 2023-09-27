@@ -26,6 +26,6 @@ chart_data = pd.DataFrame(
    }
 )
 
-st.line_chart(chart_data, x="t", y="y")
+st.line_chart(chart_data, x="t (ms)", y="amplitude")
 
 
