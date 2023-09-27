@@ -26,6 +26,6 @@ chart_data = pd.DataFrame(
    }
 )
 
-st.line_chart(chart_data, y="y", x="t")
+st.line_chart(chart_data, x="y", y="t")
 
 
