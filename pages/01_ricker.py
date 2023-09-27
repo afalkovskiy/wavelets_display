@@ -21,11 +21,11 @@ t, y = ricker (f)
 
 chart_data = pd.DataFrame(
    {
-       "t": t,
-       "y": y
+       "time (sec) ": t,
+       "amplitude": y
    }
 )
 
-st.line_chart(chart_data, x="t (ms)", y="amplitude")
+st.line_chart(chart_data, x="y", y="x")
 
 
