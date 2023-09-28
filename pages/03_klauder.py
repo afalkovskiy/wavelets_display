@@ -22,6 +22,9 @@ def ORMSBY(f1=5., f2=10., f3=40., f4=45., length=0.512, dt=0.001):
     return t, y
 
 def Klauder(T=6., f1=10., f2=40., length=0.512, dt=0.001):
+    k = (f2 - f1)/T
+    f0 = (f2 + f1)/2
+    i = complex(0, 1)
     p = np.pi
     t = np.linspace(-length/2, (length-dt)/2, int(length/dt))
     y = t**2
