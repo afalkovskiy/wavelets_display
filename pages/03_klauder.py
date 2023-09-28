@@ -29,7 +29,7 @@ def Klauder(T=6., f1=10., f2=40., length=0.512, dt=0.001):
     t = np.linspace(-length/2, (length-dt)/2, int(length/dt))
     #y = t**2
 
-    y = np.sin(pi*k*t)
+    y = np.sin(pi*k*t*(T - t))
 
     #y = p*f4**2 * (np.sinc(f4*t))**2/(f4-f3) - p*f3**2 * (np.sinc(f3*t))**2/(f4-f3) - \
     #    p*f2**2 * (np.sinc(f2*t))**2/(f2-f1) - p*f1**2 * (np.sinc(f1*t))**2/(f2-f1)
