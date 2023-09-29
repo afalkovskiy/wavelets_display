@@ -24,7 +24,8 @@ st.title('ORMSBY wavelet')
 st.text('This is a web app do display wavelets')
 
 st.latex(r'''
-    Ricker(t) = (1-2\pi^2 f^2 t^2)e^{-\pi^2 f^2 t^2}
+    Ormsby(t) = [\frac{\pi^2f_4^2}{\pi f_4 - \pi f_3} sinc^2 (\pi f_4 t) ]
+    (1-2\pi^2 f^2 t^2)e^{-\pi^2 f^2 t^2}
     ''') 
 
 #st.latex(r'''
