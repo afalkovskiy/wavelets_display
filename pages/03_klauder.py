@@ -47,7 +47,7 @@ st.latex(r'''
     Klauder(t) = real [sin(\pi kt(T-t))/(\pi kt) exp (2 \pi ifot)]
     ''')
 st.latex(r'''
-    where \; k = (f2 - fl)/T, fo = \frac{f2 + fl}{2}, i = \sqrt{-1}
+    where \; k = (f_2 - f_l)/T, fo = \frac{f_2 + f_l}{2}, i = \sqrt{-1}
     ''')
 
 st.latex(r'''
