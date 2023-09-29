@@ -50,8 +50,7 @@ st.write(f1, " - ", f2)
 
 #f1 = 5
 #f2 = 10
-f3 = f
-f4 = f+20.
+
 t, y = Klauder(7, f1, f2, 0.512, 0.001)
 
 chart_data = pd.DataFrame(
