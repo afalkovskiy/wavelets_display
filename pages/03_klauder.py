@@ -57,13 +57,14 @@ f1=10.
 f2=40.
 f1 = st.slider('Select terminal low frequency (Hz)', min_value=1., max_value=f2)
 f2 = st.slider('Select terminal high frequency (Hz)', min_value=f1, max_value=240.)
+T = st.slider('Duration of input signal (s)', value=6, min_value=5., max_value=10.)
 
 st.write(f1, " - ", f2)
 
 #f1 = 5
 #f2 = 10
 
-t, y = Klauder(7, f1, f2, 0.512, 0.001)
+t, y = Klauder(T, f1, f2, 0.512, 0.001)
 
 chart_data = pd.DataFrame(
    {
