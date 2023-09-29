@@ -45,7 +45,7 @@ st.text('This is a web app do display wavelets')
 #st.subheader("f(t) = ...")
 st.latex(r'''
     real [sin(\pi kt(T-t))/(\pi kt) exp (2 \pi ifot)]
-
+    , where k = (f2 - fl)/T, fo = (f2 + fl)/2, i = \sqrt{-1}
     ''')
 st.latex(r'''
     a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
