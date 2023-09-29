@@ -42,7 +42,12 @@ def Klauder(T=6., f1=10., f2=40., length=0.512, dt=0.001):
 st.title('Klauder wavelet')
 st.text('This is a web app do display wavelets')
 
-st.subheader("f(t) = ...")
+#st.subheader("f(t) = ...")
+st.latex(r'''
+    a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
+    \sum_{k=0}^{n-1} ar^k =
+    a \left(\frac{1-r^{n}}{1-r}\right)
+    ''')
 f1 = st.slider('Select terminal low frequency (Hz)', value=10., min_value=1., max_value=240.)
 f2 = st.slider('Select terminal low frequency (Hz)', value=40., min_value=1., max_value=240.)
 
