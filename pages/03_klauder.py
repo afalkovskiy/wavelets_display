@@ -55,7 +55,7 @@ st.latex(r'''
  #   ''')
 f1=10.
 f2=40.
-f1 = st.slider('Select terminal low frequency (Hz)', min_value=1., max_value=240.)
+f1 = st.slider('Select terminal low frequency (Hz)', min_value=1., max_value=f2)
 f2 = st.slider('Select terminal high frequency (Hz)', min_value=f1, max_value=240.)
 
 st.write(f1, " - ", f2)
