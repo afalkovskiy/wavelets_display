@@ -9,8 +9,7 @@ import math
 st.title('Ricker wavelet')
 st.text('This is a web app do display wavelets')
 st.latex(r'''
-    Klauder(t) = Re (\frac{sin(\pi kt(T-t))}{\pi kt} e^ {2 \pi if_0 t}),
-    where \; k = \frac{f_2 - f_l}{T}, fo = \frac{f_2 + f_l}{2}, i = \sqrt{-1}
+    Ricker(t) = (1.-2.*(np.pi**2)*(f**2)*(t**2))*np.exp(-(np.pi**2)*(f**2)*(t**2))
     ''') 
 
 #st.latex(r'''
