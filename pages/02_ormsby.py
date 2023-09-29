@@ -23,7 +23,16 @@ def ORMSBY(f1=5., f2=10., f3=40., f4=45., length=0.512, dt=0.001):
 st.title('ORMSBY wavelet')
 st.text('This is a web app do display wavelets')
 
-st.subheader("f(t) = ...")
+st.latex(r'''
+    Ricker(t) = (1-2\pi^2 f^2 t^2)e^{-\pi^2 f^2 t^2}
+    ''') 
+
+#st.latex(r'''
+ #   a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
+  #  \sum_{k=0}^{n-1} ar^k =
+ #   a \left(\frac{1-r^{n}}{1-r}\right)
+ #   ''')
+
 #f = st.slider('Select frequency from [1, 240] Hz', value=60., min_value=1., max_value=240.)
 #st.write("Frequency f3 = ", f)
 
