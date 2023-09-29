@@ -32,7 +32,7 @@ st.subheader("f(t) = ...")
 #f3 = 60
 #f4 = 70.
 
-f1 = st.slider('Select frequency f1 (Hz)', value=5., min_value=1., max_value=240.)
+f1 = st.slider('Select frequency f1 (Hz)', value=5., min_value=1, max_value=240.)
 f2 = st.slider('Select frequency f2 (Hz)', value=10., min_value=1, max_value=240.)
 f3 = st.slider('Select frequency f3 (Hz)', value=60., min_value=1, max_value=240.)
 f4 = st.slider('Select frequency f4 (Hz)', value=70., min_value=1, max_value=240.)
