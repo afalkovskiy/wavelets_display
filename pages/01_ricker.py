@@ -9,7 +9,7 @@ import math
 st.title('Ricker wavelet')
 st.text('This is a web app do display wavelets')
 st.latex(r'''
-    Ricker(t) = (1.-2.*(np.pi**2)*(f**2)*(t**2))*np.exp(-(np.pi**2)*(f**2)*(t**2))
+    Ricker(t) = (1-2\pi^2 f^2 t^2)exp(-(np.pi**2)*(f**2)*(t**2))
     ''') 
 
 #st.latex(r'''
