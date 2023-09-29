@@ -8,6 +8,16 @@ import math
 
 st.title('Ricker wavelet')
 st.text('This is a web app do display wavelets')
+st.latex(r'''
+    Klauder(t) = Re (\frac{sin(\pi kt(T-t))}{\pi kt} e^ {2 \pi if_0 t}),
+    where \; k = \frac{f_2 - f_l}{T}, fo = \frac{f_2 + f_l}{2}, i = \sqrt{-1}
+    ''')
+
+#st.latex(r'''
+ #   a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
+  #  \sum_{k=0}^{n-1} ar^k =
+ #   a \left(\frac{1-r^{n}}{1-r}\right)
+ #   ''')
 
 def ricker(f, length=0.512, dt=0.001):
     t = np.linspace(-length/2, (length-dt)/2, int(length/dt))
