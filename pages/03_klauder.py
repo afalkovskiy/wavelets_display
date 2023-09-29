@@ -44,9 +44,8 @@ st.text('This is a web app do display wavelets')
 
 #st.subheader("f(t) = ...")
 st.latex(r'''
-    Klauder(t) = real [sin(\frac{\pi kt(T-t)}{\pi kt} exp (2 \pi ifot)]
-    ''')
-st.latex(r'''
+    Klauder(t) = real [sin(\frac{\pi kt(T-t)}{\pi kt} exp (2 \pi ifot)],
+ 
     where \; k = (f_2 - f_l)/T, fo = \frac{f_2 + f_l}{2}, i = \sqrt{-1}
     ''')
 
