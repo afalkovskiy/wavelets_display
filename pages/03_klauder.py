@@ -46,7 +46,7 @@ st.text('This is a web app do display wavelets')
 st.latex(r'''
     Klauder(t) = real [sin(\frac{\pi kt(T-t)}{\pi kt} e^ {2 \pi if_0 t}],
      \\
-    where \; k = (f_2 - f_l)/T, fo = \frac{f_2 + f_l}{2}, i = \sqrt{-1}
+    where \; k = frac{f_2 - f_l}{T}, fo = \frac{f_2 + f_l}{2}, i = \sqrt{-1}
     ''')
 
 #st.latex(r'''
