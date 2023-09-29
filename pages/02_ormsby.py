@@ -25,11 +25,12 @@ st.text('This is a web app do display wavelets')
 
 st.subheader("f(t) = ...")
 #f = st.slider('Select frequency from [1, 240] Hz', value=60., min_value=1., max_value=240.)
-st.write("Frequency f3 = ", f)
+#st.write("Frequency f3 = ", f)
 f1 = st.slider('Select frequency f1 (Hz)', value=5., min_value=1., max_value=240.)
 f2 = st.slider('Select frequency f2 (Hz)', value=10., min_value=1., max_value=240.)
 f3 = st.slider('Select frequency f3 (Hz)', value=60., min_value=1., max_value=240.)
 f4 = st.slider('Select frequency f4 (Hz)', value=70., min_value=1., max_value=240.)
+st.write(f1, " - ", f2, " - ", f3, " - ", f4)
 
 #f1 = 5
 #f2 = 10
