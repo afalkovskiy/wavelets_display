@@ -43,11 +43,13 @@ st.title('Klauder wavelet')
 st.text('This is a web app do display wavelets')
 
 st.subheader("f(t) = ...")
-f = st.slider('Select frequency from [1, 240] Hz', value=60., min_value=1., max_value=240.)
-st.write("Frequency f3 = ", f)
+f1 = st.slider('Select terminal low frequency (Hz)', value=10., min_value=1., max_value=240.)
+f2 = st.slider('Select terminal low frequency (Hz)', value=40., min_value=1., max_value=240.)
 
-f1 = 5
-f2 = 10
+st.write(f1, " - ", f2)
+
+#f1 = 5
+#f2 = 10
 f3 = f
 f4 = f+20.
 t, y = Klauder(7, f1, f2, 0.512, 0.001)
