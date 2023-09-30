@@ -29,12 +29,12 @@ st.latex(r'''
     - \frac{\pi f_2^2 sinc^2 (\pi f_2 t) - \pi f_1^2 sinc^2 (\pi f_1 t)}{f_2 - f_1}
     ''') 
 
-st.latex(r'''
-    Ormsby(t) = \frac{\pi^2f_4^2}{\pi f_4 - \pi f_3} sinc^2 (\pi f_4 t) 
-    - \frac{\pi^2f_3^2}{\pi f_4 - \pi f_3} sinc^2 (\pi f_3 t)
-    - \frac{\pi^2f_2^2}{\pi f_2 - \pi f_1} sinc^2 (\pi f_4 t)
-    + \frac{\pi^2f_1^2}{\pi f_2 - \pi f_1} sinc^2 (\pi f_4 t)
-    ''') 
+#st.latex(r'''
+#    Ormsby(t) = \frac{\pi^2f_4^2}{\pi f_4 - \pi f_3} sinc^2 (\pi f_4 t) 
+#    - \frac{\pi^2f_3^2}{\pi f_4 - \pi f_3} sinc^2 (\pi f_3 t)
+#    - \frac{\pi^2f_2^2}{\pi f_2 - \pi f_1} sinc^2 (\pi f_4 t)
+#    + \frac{\pi^2f_1^2}{\pi f_2 - \pi f_1} sinc^2 (\pi f_4 t)
+#    ''') 
 
 #f = st.slider('Select frequency from [1, 240] Hz', value=60., min_value=1., max_value=240.)
 #st.write("Frequency f3 = ", f)
