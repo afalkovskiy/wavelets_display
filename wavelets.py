@@ -11,3 +11,4 @@ st.write('**Ricker, Ormsby, Klauder** - use left side menu to select.')
 
 url1 = "https://www.rmseismic.com/lasviewer.html"
 st.write("More geophysical web apps: [link](%s)" % url1)
+st.write("A.F., Sep 2023")
