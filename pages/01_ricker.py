@@ -19,7 +19,7 @@ def ricker(f, length=0.512, dt=0.001):
 
 #st.subheader("f(t) = (1.-2.*(np.pi**2)*(f**2)*(t**2))*np.exp(-(np.pi**2)*(f**2)*(t**2))")
 f = st.slider('Select frequency from [1, 240] Hz', value=30., min_value=1., max_value=240.)
-st.write("Frequency = ", f)
+st.write("Frequency = ", f, "Hz")
 t, y = ricker (f)
 
 chart_data = pd.DataFrame(
