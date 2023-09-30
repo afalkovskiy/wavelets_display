@@ -26,8 +26,7 @@ st.text('This is a web app do display wavelets')
 
 st.latex(r'''
     Ormsby(t) = \frac{\pi f_4^2 sinc^2 (\pi f_4 t) - \pi f_3^2 sinc^2 (\pi f_3 t)}{f_4 - f_3}  
-    - \frac{\pi^2f_2^2}{\pi f_2 - \pi f_1} sinc^2 (\pi f_4 t)
-    + \frac{\pi^2f_1^2}{\pi f_2 - \pi f_1} sinc^2 (\pi f_4 t)
+    - \frac{\pi f_4^2 sinc^2 (\pi f_4 t) - \pi f_3^2 sinc^2 (\pi f_3 t)}{f_4 - f_3}
     ''') 
 
 st.latex(r'''
