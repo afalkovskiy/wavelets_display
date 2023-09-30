@@ -46,13 +46,12 @@ st.latex(r'''
   #  \sum_{k=0}^{n-1} ar^k =
  #   a \left(\frac{1-r^{n}}{1-r}\right)
  #   ''')
-f1=10.
-f2=40.
-f1 = st.slider('Select terminal low frequency (Hz)', min_value=1., max_value=f2)
-f2 = st.slider('Select terminal high frequency (Hz)', min_value=f1, max_value=240.)
+
+f1 = st.slider('Select terminal low frequency (Hz)', value=10., min_value=1., max_value=240.)
+f2 = st.slider('Select terminal high frequency (Hz)', value=40., min_value=1., max_value=240.)
 T = st.slider('Duration of input signal (s)', value=6., min_value=5., max_value=10.)
 
-st.write(f1, " - ", f2)
+st.write(f1, " - ", f2, "Hz", T, " (s)")
 
 #f1 = 5
 #f2 = 10
