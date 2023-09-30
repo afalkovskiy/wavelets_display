@@ -7,7 +7,7 @@ import numpy as np
 import math
 
 st.title('Ricker wavelet')
-st.text('This is a web app do display wavelets')
+st.text('This is a web app to display wavelets - select parameters.')
 #url = "https://rmseismic.com"
 #st.write("RM Seismic Software [rmseismic.com](%s)" % url)
 
