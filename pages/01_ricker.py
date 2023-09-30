@@ -8,6 +8,9 @@ import math
 
 st.title('Ricker wavelet')
 st.text('This is a web app do display wavelets')
+url = "https://www.streamlit.io"
+st.write("check out this [link](%s)" % url)
+
 st.latex(r'''
     Ricker(t) = (1-2\pi^2 f^2 t^2)e^{-\pi^2 f^2 t^2}
     ''') 
