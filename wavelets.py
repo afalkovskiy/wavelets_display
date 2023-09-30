@@ -9,5 +9,5 @@ st.write('It is based on a paper by Harold Ryan: Ricker, Ormsby; Klander, Bntter
 st.write('A list of wavelets you can display and vary parameters:')
 st.write('**Ricker, Ormsby, Klauder** - use left side menu to select.')
 
-url = "https://www.rmseismic.com/lasviewer.html"
-st.write("More geophysical web apps: [rmseismic.com/lasviewer.html](%s)" % url)
+url1 = "https://www.rmseismic.com/lasviewer.html"
+st.write("More geophysical web apps: [link](%s)" % url1)
