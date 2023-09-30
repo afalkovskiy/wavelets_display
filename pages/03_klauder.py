@@ -49,9 +49,9 @@ st.latex(r'''
 
 f1 = st.slider('Select terminal low frequency (Hz)', value=10., min_value=1., max_value=240.)
 f2 = st.slider('Select terminal high frequency (Hz)', value=40., min_value=1., max_value=240.)
-T = st.slider('Duration of input signal (s)', value=6., min_value=5., max_value=10.)
+T = st.slider('Duration of input signal (s)', value=7., min_value=5., max_value=10.)
 
-st.write(f1, " - ", f2, "Hz", T, " (s)")
+st.write(f1, " - ", f2, "Hz, T =", T, " s")
 
 #f1 = 5
 #f2 = 10
