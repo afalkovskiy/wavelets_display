@@ -14,12 +14,7 @@ url1 = "https://www.rmseismic.com/lasviewer.html"
 st.write("More geophysical web apps: [link](%s)" % url1)
 st.write("A.F., Sep 2023")
 
-html1 = f"<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-VBX865DFKL"></script><script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-VBX865DFKL');
-</script>"
+
 
 html1 = f"2023"
 
