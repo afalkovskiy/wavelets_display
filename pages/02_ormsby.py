@@ -21,8 +21,6 @@ def ORMSBY(f1=5., f2=10., f3=40., f4=45., length=0.512, dt=0.001):
     return t, y
 
 st.title('ORMSBY wavelet')
-st.text('This is a web app do display wavelets')
-
 
 st.latex(r'''
     Ormsby(t) = \frac{\pi f_4^2 sinc^2 (\pi f_4 t) - \pi f_3^2 sinc^2 (\pi f_3 t)}{f_4 - f_3}  
