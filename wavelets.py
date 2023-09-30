@@ -24,8 +24,7 @@ google_js = """
 </script>
 """
 
-html1 = f"google_js"
+html1 = f"{google_js}"
 
-#html1 = f"2023"
 
 html(html1)
