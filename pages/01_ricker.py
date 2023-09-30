@@ -8,7 +8,7 @@ import math
 
 st.title('Ricker wavelet')
 st.text('This is a web app do display wavelets')
-url = "http://rmseismic.com"
+url = "https://rmseismic.com"
 st.write("RM Seismic Software [link](%s)" % url)
 
 st.latex(r'''
