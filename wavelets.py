@@ -10,4 +10,4 @@ st.write('A list of wavelets you can display and vary parameters:')
 st.write('Ricker, Ormsby, Klauder - use left side menu to select.')
 
 url = "https://www.rmseismic.com/lasviewer.html"
-st.write("More geo apps [rmseismic.com](%s)" % url)
+st.write("More geophysical web apps [rmseismic.com/lasviewer.html](%s)" % url)
