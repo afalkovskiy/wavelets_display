@@ -23,18 +23,20 @@ def ORMSBY(f1=5., f2=10., f3=40., f4=45., length=0.512, dt=0.001):
 st.title('ORMSBY wavelet')
 st.text('This is a web app do display wavelets')
 
+
+st.latex(r'''
+    Ormsby(t) = \frac{\pi^2f_4^2sinc^2 (\pi f_4 t)}{\pi f_4 - \pi f_3}  
+    - \frac{\pi^2f_3^2}{\pi f_4 - \pi f_3} sinc^2 (\pi f_3 t)
+    - \frac{\pi^2f_2^2}{\pi f_2 - \pi f_1} sinc^2 (\pi f_4 t)
+    + \frac{\pi^2f_1^2}{\pi f_2 - \pi f_1} sinc^2 (\pi f_4 t)
+    ''') 
+
 st.latex(r'''
     Ormsby(t) = \frac{\pi^2f_4^2}{\pi f_4 - \pi f_3} sinc^2 (\pi f_4 t) 
     - \frac{\pi^2f_3^2}{\pi f_4 - \pi f_3} sinc^2 (\pi f_3 t)
     - \frac{\pi^2f_2^2}{\pi f_2 - \pi f_1} sinc^2 (\pi f_4 t)
     + \frac{\pi^2f_1^2}{\pi f_2 - \pi f_1} sinc^2 (\pi f_4 t)
     ''') 
-
-#st.latex(r'''
- #   a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
-  #  \sum_{k=0}^{n-1} ar^k =
- #   a \left(\frac{1-r^{n}}{1-r}\right)
- #   ''')
 
 #f = st.slider('Select frequency from [1, 240] Hz', value=60., min_value=1., max_value=240.)
 #st.write("Frequency f3 = ", f)
