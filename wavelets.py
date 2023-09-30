@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit.components.v1 import html
 
 st.title('Seismic Wavelets')
 st.subheader('Alex Falkovskiy')
@@ -12,3 +13,6 @@ st.write('**Ricker, Ormsby, Klauder** - use left side menu to select a wavelet a
 url1 = "https://www.rmseismic.com/lasviewer.html"
 st.write("More geophysical web apps: [link](%s)" % url1)
 st.write("A.F., Sep 2023")
+
+html1 = f"<b> test </b>"
+html(html1)
